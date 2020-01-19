@@ -27,5 +27,11 @@ class BooksMobelSerializerAPI(serializers.ModelSerializer):
 class BooksMobelSerializerAPIPOST(serializers.ModelSerializer):
     class Meta:
         model = BooksModel
-        fields = ("title", "text", "author", "publisher", "genre")
+        fields = (
+            "title",
+            "text",
+            "author",
+            "publisher",
+            "genre",
+        )
 
